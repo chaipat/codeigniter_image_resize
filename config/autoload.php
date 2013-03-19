@@ -39,6 +39,7 @@
 
 $autoload['packages'] = array(APPPATH.'third_party');
 
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Libraries
