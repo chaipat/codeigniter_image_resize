@@ -15,7 +15,7 @@ class resize_lib
 		$this->set($image_src, $width, $height);
 				
 		if(file_exists($this->cache_dir.$this->name))
-			return $this->name;
+			return $this->cache_dir.$this->name;
 		
 		$this->set($image_src, $width, $height);
 		
@@ -48,7 +48,7 @@ class resize_lib
 	
 	private function get()
 	{
-		return $this->name;
+		return $this->cache_dir.$this->name;
 	}
 	
     private function get_name($file_name)
